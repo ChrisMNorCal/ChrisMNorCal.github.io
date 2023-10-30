@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(0, 174, 255) ;
+    background-color: darkgray;
     padding: 5px 30px ;
 }
 
@@ -38,3 +38,42 @@ body {
     border-radius: 6px ;
     border-color: rgb(255, 72, 0) ;
 }
+
+#error {
+    text-align: left;
+    background-color: rgb(78, 26, 6);
+    color: white;
+    position: absolute;
+    display: none;
+    /* top: 50%; */
+    width: 50%;
+    /* right: 50%; */
+    display: flex;
+    justify-content: center;
+}
+
+.close-button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .close-button::before, .close-button::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: #000; /* Adjust the color as needed */
+    top: 5px;
+    left: 14px;
+  }
+  
+  .close-button::before {
+    transform: rotate(45deg);
+  }
+  
+  .close-button::after {
+    transform: rotate(-45deg);
+  }
+  

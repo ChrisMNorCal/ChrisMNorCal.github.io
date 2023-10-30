@@ -10,12 +10,22 @@
     <body>
         <div class="inner">
             <p class="header" id="output">Weather On Demand</p>
-            <button onclick="onClick()" type="button">Submit</button>
-        
-            <input class="input" id="input" type="text" name="town" placeholder="city" required>
             <h4 class="date" id="date" name="date"></h4>
          
             <h4 class="post" id="post" name="post"></h4>
+
+            <div>
+                <input class="input" id="input" type="text" name="town" placeholder="city" required>
+
+                <button onclick="onClick()" type="button">Submit</button>
+                <div id="error">
+                    <div class="close-button"></div>
+                    <b>Error: </b><p id="error-msg"></p>
+                </div>
+            </div>
+        
+        
+            
         </div>
     
     </body>
