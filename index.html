@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <link href="stylesheet.css" rel="stylesheet">
-        <script src="script.js"></script>
-        <title>WeatherApp</title>
-    </head>
-    <body>
-        <div class="inner">
-            <p class="header" id="output">Weather On Demand</p>
-            <button onclick="onClick()" type="button">Submit</button>
-        
-            <input class="input" id="input" type="text" name="town" placeholder="city" required>
-            <h4 class="date" id="date" name="date"></h4>
-         
-            <h4 class="post" id="post" name="post"></h4>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="stylesheet.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="inner">
+      <p class="header" id="output">Weather On Demand</p>
+      <h4 class="date" id="date" name="date"></h4>
+
+      <h4 class="post" id="post" name="post"></h4>
+
+      <div>
+        <input
+          class="input"
+          id="input"
+          type="text"
+          name="town"
+          placeholder="city"
+          required
+        />
+
+        <button onclick="onClick()" type="button">Submit</button>
+        <div id="error">
+          <img
+            onclick="closeError()"
+            src="https://cdn-icons-png.flaticon.com/256/61/61155.png"
+            class="close-icon"
+          />
+          <div class="err-msg">
+            <span>
+              <b>Error: </b>
+              <p id="error-msg"></p
+            ></span>
+          </div>
         </div>
-    
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
